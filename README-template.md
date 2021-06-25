@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/bret-ai/3column-preview-card-component)
 - Live Site URL: [Add live site URL here](https://gracious-curie-21b5c6.netlify.app)
 
 ## My process
