@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './assets/Fonts/Lexend_Deca/LexendDeca-Regular.ttf';
+import './assets/Fonts/BigShouldersDisplay/BigShouldersDisplay-Bold.ttf';
 
 ReactDOM.render(
   <React.StrictMode>

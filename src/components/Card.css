@@ -1,0 +1,154 @@
+.card {
+  width: 300px;
+  min-width: 100px;
+  min-height: 300px;
+  height: 70%;
+  padding: 10px 10px;
+
+  /* transition: transform 0.5s; */
+}
+
+.card ::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  content: '';
+  opacity: 0;
+  z-index: -1;
+}
+
+.card :hover {
+  transform: scale3d(1.006, 1.006, 1);
+  transition: transform 0.5s;
+}
+
+/* &::after {
+      opacity: 1;
+    }
+  }
+} */
+
+.orange {
+  background-color: hsl(31, 77%, 52%);
+}
+
+@media screen and (max-width: 425px) {
+  .orange {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .darkCyan {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 3000px) {
+  .orange {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .darkCyan {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+.cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.darkCyan {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.container {
+  height: 100%;
+  margin-left: 2em;
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.icon-header {
+  margin-top: 1em;
+}
+
+.header {
+  font-family: BigShouldersDisplay-Bold;
+  font-weight: 700;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.text {
+  font-family: LexendDeca;
+  font-weight: 400;
+  font-size: smaller;
+  color: white;
+  padding-bottom: 2em;
+}
+
+.btn {
+  display: flex;
+  overflow: hidden;
+  width: 55%;
+  padding: 8px 8px;
+  cursor: pointer;
+
+  user-select: none;
+  transition: all 150ms linear;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none !important;
+  text-transform: none;
+  text-transform: capitalize;
+  font-family: LexendDeca;
+
+  color: inherit;
+  /* color: #202129; */
+  background-color: #f2f2f2;
+  border: 0 none;
+  border-radius: 36px;
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  justify-content: center;
+  align-items: center;
+  /* flex: 0 0 160px; */
+
+  /* box-shadow: 2px 5px 10px #e4e4e4; */
+
+  margin-bottom: 1em;
+}
+
+.btn :hover {
+  transition: all 150ms linear;
+  color: #202129;
+  background-color: green;
+  opacity: 1;
+}
+
+.btn :focus {
+  outline: 1px dotted #959595;
+  outline-offset: -4px;
+}
+
+.btn :active {
+  transition: all 150ms linear;
+  background-color: green;
+  opacity: 1;
+}
